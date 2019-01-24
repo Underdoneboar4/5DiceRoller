@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cqI-pV-zjU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IuW-hm-A77">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press a die to &quot;lock it in&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KX-u7-RWP">
+                                        <rect key="frame" x="10" y="0.0" width="355" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" red="1" green="0.88754215079999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="GPK-lP-fo4">
+                                        <rect key="frame" x="67.5" y="117" width="240" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usi-tC-EcI" userLabel="Die1">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="GVK-hm-5M1"/>
+                                                    <constraint firstAttribute="height" constant="100" id="bAW-Wj-MuP"/>
+                                                </constraints>
+                                                <state key="normal" image="Dice1"/>
+                                                <connections>
+                                                    <action selector="Die1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WM2-y7-zdL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="031-yF-xod" userLabel="Die4">
+                                                <rect key="frame" x="140" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="DmY-AH-mVX"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Ulg-48-30t"/>
+                                                </constraints>
+                                                <state key="normal" image="Dice1"/>
+                                                <connections>
+                                                    <action selector="Die4Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDj-0z-0fq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cim-2g-JVm">
+                                        <rect key="frame" x="67.5" y="262.5" width="240" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX7-X8-9N6" userLabel="Die2">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="7v9-ZP-Wgh"/>
+                                                    <constraint firstAttribute="width" constant="100" id="RDG-aP-zTT"/>
+                                                </constraints>
+                                                <state key="normal" image="Dice1"/>
+                                                <connections>
+                                                    <action selector="Die2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Xd-4E-czV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGn-MZ-LJT" userLabel="Die5">
+                                                <rect key="frame" x="140" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Okn-60-tVE"/>
+                                                    <constraint firstAttribute="height" constant="100" id="rYa-NZ-BwW"/>
+                                                </constraints>
+                                                <state key="normal" image="Dice1"/>
+                                                <connections>
+                                                    <action selector="Die5Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1E-Dt-muU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ7-v5-7lS" userLabel="Die3">
+                                        <rect key="frame" x="137.5" y="408.5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="UC9-b8-Er9"/>
+                                            <constraint firstAttribute="width" constant="100" id="bbp-DY-aZA"/>
+                                        </constraints>
+                                        <state key="normal" image="Dice1"/>
+                                        <connections>
+                                            <action selector="Die3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M21-Yd-dU7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="248" text="Welcome! Shake the phone to roll" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eW-Wi-2KM" userLabel="WinnerLabel">
+                                        <rect key="frame" x="26" y="561" width="323.5" height="86"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" red="1" green="0.88754215079999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10297686325161942" green="0.5" blue="0.023224044782263642" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IuW-hm-A77" secondAttribute="bottom" id="PhE-DO-JW0"/>
+                            <constraint firstItem="IuW-hm-A77" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tv5-uB-M8Z"/>
+                            <constraint firstAttribute="trailing" secondItem="IuW-hm-A77" secondAttribute="trailing" id="wHI-Wg-Vt9"/>
+                            <constraint firstItem="IuW-hm-A77" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xft-aQ-raN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="txX-sv-pUA"/>
+                    <connections>
+                        <outlet property="Die1" destination="Usi-tC-EcI" id="GlW-N2-6Ju"/>
+                        <outlet property="Die2" destination="pX7-X8-9N6" id="Pj6-4d-4oB"/>
+                        <outlet property="Die3" destination="aJ7-v5-7lS" id="dlh-vR-90r"/>
+                        <outlet property="Die4" destination="031-yF-xod" id="Zia-RB-vpX"/>
+                        <outlet property="Die5" destination="lGn-MZ-LJT" id="nvC-Bm-GIV"/>
+                        <outlet property="WinnerLabel" destination="1eW-Wi-2KM" id="5OQ-JF-MrS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kxG-6K-mfv">
+            <objects>
+                <viewController id="cqI-pV-zjU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EUP-qB-91W"/>
+                        <viewControllerLayoutGuide type="bottom" id="i8k-jB-gop"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hxJ-cs-nEY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxu-d7-wEf">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <state key="normal" image="logo-eagle-tag"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Zwv-RT-ZkD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i8k-jB-gop" firstAttribute="top" secondItem="wxu-d7-wEf" secondAttribute="bottom" id="CTW-P5-M5n"/>
+                            <constraint firstItem="wxu-d7-wEf" firstAttribute="top" secondItem="EUP-qB-91W" secondAttribute="bottom" id="OEf-ca-IWp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wxu-d7-wEf" secondAttribute="trailing" id="OPO-Gb-s1q"/>
+                            <constraint firstItem="wxu-d7-wEf" firstAttribute="leading" secondItem="hxJ-cs-nEY" secondAttribute="leadingMargin" id="aYB-mH-Yfe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjI-2N-HRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-609" y="41"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dice1" width="239" height="239"/>
+        <image name="logo-eagle-tag" width="300" height="225"/>
+    </resources>
+</document>
